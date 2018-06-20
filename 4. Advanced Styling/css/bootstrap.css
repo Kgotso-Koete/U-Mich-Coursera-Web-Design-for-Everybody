@@ -1,0 +1,117 @@
+
+body{
+	margin: 1%;
+	padding:1%;
+	background-color: rgba(0,0,255,.2);
+	font-size: 100%;
+	min-width: 500px;
+
+}
+header, footer{
+  background-color:#0066FF;
+  padding: 1%;
+  margin: 1%;
+}
+header h1{
+	font-size: 3rem;
+	color:rgba(0,0,0,.7);;
+
+}
+
+section{
+  margin:1%;
+    padding:1%;
+}
+
+nav a{
+	display:block;
+	background-color: white;
+	border: 1px solid black;
+	text-align: center;
+	border-radius: 35px;
+	text-decoration: none;
+	padding: 2%;
+	margin: 1%;
+}
+
+h1{
+	text-align: center;
+	color:rgba(255,0,0,.7);;
+}
+
+
+.myClass{
+	margin: 0em 1em;
+	padding:.75em;
+	border: 1px solid black;
+	border-radius: .25%;
+
+	/* Safari and Chrome */
+	-webkit-column-count:3;
+	-moz-column-count: 3;
+	column-count:3;
+
+}
+
+
+
+ol{
+	list-style:upper-roman;
+	margin:1em;
+}
+img{
+	display: none;
+}
+
+footer{
+	clear: both;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+/*Create a new look for screen sizes that are greater than 900px*/
+@media all and (min-width:900px)
+{
+  header, footer
+  {
+    background-color: transparent; /*remove header and footer backgrounds*/
+  }
+
+  h1:after
+  {
+  content: "(I guess...)"; /*Additional text in/after the h1 (See how now it says “I guess”??)*/
+  }
+}
+
+/*Go back to the mobile view and print the page*/
+@media print
+{
+  body
+  {
+    background-color: grey;/*The background color is removed*/
+  }
+
+  /*The navigation links are not styled as much (you need to figure out which parts have changed)*/
+  nav a
+  {
+  	display:block;
+  	background-color: transparent; /*The background color is removed*/
+  	border: 0px solid black; /*remove border*/
+  	padding: 0%;
+  	margin: 0%;
+    text-decoration: underline;
+  }
+
+   /* make 1 column count */
+  .myClass
+  {
+  	/* Safari and Chrome */
+  	-webkit-column-count:1;
+  	-moz-column-count: 1;
+  	column-count:1;
+  }
+}
+
+.center-block {
+    float: none !important
+}
