@@ -1,0 +1,191 @@
+/*
+Week 1 CSS code
+*/
+
+header {
+  background-color: #696969;
+}
+
+h1 {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+section
+{
+  background-color: #708090;
+}
+
+a {
+  background-color: #fffff0;
+  color: #000000;
+  text-align: center;
+}
+
+img {
+  display: none;
+}
+
+/*
+Week 2 CSS code
+*/
+
+/*
+The body should have padding and margin
+*/
+body {
+  margin: 2%;
+  padding: 1%;
+}
+
+/*
+The header should have a background color, background image (using a local image), and padding
+*/
+header {
+  background-color: #E0E0E0;
+  background-image:url("../css/images/flywheel.jpg");
+  padding: 1%;
+  background-size:100%;
+  margin-bottom: 1%;
+}
+
+/*
+Get all navigation items aligned to the center in the navigation container
+*/
+nav {
+  text-align: center;
+}
+
+/*
+The navigation links (and only the links in the navigation) should be styled with a new display, margin, border-radius, text-decoration, and padding
+*/
+nav a {
+  display: inline-block;
+  margin: 3%;
+  border-radius: 5%;
+  text-decoration: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  color: black;
+  background-color: rgba(224,224,224,0.5);
+  vertical-align: middle;
+}
+
+/*
+The link to the current page should be styled differently from the other links (using class = "active')
+*/
+.active {
+  background-color: rgba(224,224,224,1);
+}
+
+/*
+The sections should be next to each other, not one on top of the other.
+*/
+.left {
+	background-color: #e5f8e5;
+	width: 24%;
+	float:left;
+}
+
+.right {
+	width:74%;
+	display: inline-block;
+  padding: 1%
+}
+
+/*
+The images should be part of the page now. In addition, they should have a border, be centered horizontally, and have vertical (top/bottom) space between them and the other images.
+*/
+.left img {
+	border: solid 3px #006400;
+  display: block;
+	width: 80%;
+	margin: 10%;
+}
+
+section
+{
+  background-color: white;
+}
+
+h2 {
+  color: black;
+  text-transform: uppercase;
+}
+
+
+/*
+Week 4 CSS code
+*/
+
+/* The table should be styled using at least four properties*/
+table {
+	margin: auto; /* center the table */
+  width: 60%; /* make table slighlty wider */
+  border: 1px solid grey;
+  border-top-left-radius: 10px;/* round only the top two corners */
+  border-top-right-radius: 10px;/* round only the top two corners */
+}
+
+tr:nth-child(odd){
+  line-height: 150%; /* different line height for every other row */
+  background-color: rgba(224,224,224,1);
+  font-size: 17px;
+  font-style: oblique;
+}
+
+/*The table headings should have a border, background color, and at least one other property.*/
+table:only-of-type th {
+  background: linear-gradient(to bottom right, #e5f8e5, #77dd77);  /* gradient background*/
+  font-weight:bold; /* bold table headings */
+  font-size: 20px;
+  font-style: normal;
+  border: 1px solid #006400;
+  border-top-left-radius: 10px;/* round only the top two corners */
+  border-top-right-radius: 10px;/* round only the top two corners */
+  border-bottom-width: 3px; /* make bottom boarder thicker */
+}
+
+/*Style the table so that the text in the first column is left-aligned and the text in the other two columns is centered*/
+th {
+  text-align: left;
+}
+
+th:not(:first-child) {
+  text-align: center;
+}
+
+td {
+  text-align: left;
+}
+
+td:not(:first-child) {
+  text-align: center;
+}
+
+/* Set the opacity of the table rows to a value between .6 and .8 (make sure it is still visible)*/
+tr:not(:first-child) {
+  opacity: 0.7; /* set table row opacity to 0.8 */
+}
+
+/* Change the opacity of a row when it is hovered over*/
+tr:not(:first-child):hover {
+  opacity: 1; /* set element to 1 when it is hovered upon*/
+}
+
+/*The table elements < td > should be styled using at least four properties*/
+td {
+  border: 1px solid grey;
+  border-radius: 2px; /* set border radius to 2 px*/
+  color:#36515b; /* change font color*/
+  background-color: #f2fbf2; /* background color*/
+  padding: 1.5px; /* change padding*/
+}
